@@ -16,7 +16,7 @@
         @csrf
         @method('PUT')
 
-        <!-- Merchandise Name -->
+        
         <div style="margin-bottom:20px;">
             <label for="name" style="display:block; margin-bottom:6px; font-weight:bold;">Merchandise Name</label>
             <input 
@@ -35,7 +35,7 @@
             >
         </div>
 
-        <!-- Price -->
+        
         <div style="margin-bottom:20px;">
             <label for="price" style="display:block; margin-bottom:6px; font-weight:bold;">Price</label>
             <input 
@@ -55,7 +55,7 @@
             >
         </div>
 
-        <!-- Stock -->
+        
         <div style="margin-bottom:30px;">
             <label for="stock" style="display:block; margin-bottom:6px; font-weight:bold;">Stock</label>
             <input 
@@ -75,35 +75,35 @@
         </div>
 
 
-        <!-- Merchandise Type -->
-<div style="margin-bottom:30px;">
-    <label for="merchandise_type_id" style="display:block; margin-bottom:6px; font-weight:bold;">Merchandise Type</label>
-    <select 
-        id="merchandise_type_id" 
-        name="merchandise_type_id" 
-        required
-        style="
-            width:100%;
-            padding:10px;
-            border:3px solid #9de5ceff;
-            border-radius:5px;
-            background:#fff;
-            font-size:1rem;
-        "
-    >
-        <option value="">Select a type</option>
-        @foreach ($merchandise_types as $mt)
-            <option value="{{ $mt->id }}" 
-                {{ $merchandise->merchandise_type_id == $mt->id ? 'selected' : '' }}>
-                {{ $mt->merchandise_type_name }}
-            </option>
-        @endforeach
-    </select>
-</div>
+        
+        <div style="margin-bottom:30px;">
+            <label for="merchandise_type_id" style="display:block; margin-bottom:6px; font-weight:bold;">Merchandise Type</label>
+            <select 
+                id="merchandise_type_id" 
+                name="merchandise_type_id" 
+                required
+                style="
+                    width:100%;
+                    padding:10px;
+                    border:3px solid #9de5ceff;
+                    border-radius:5px;
+                    background:#fff;
+                    font-size:1rem;
+                "
+            >
+                <option value="">Select a type</option>
+                @foreach ($merchandise_types as $mt)
+                    <option value="{{ $mt->id }}" 
+                        {{ $merchandise->merchandise_type_id == $mt->id ? 'selected' : '' }}>
+                        {{ $mt->merchandise_type_name }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
 
 
 
-        <!-- Form Buttons -->
+        
         <div style="display:flex; justify-content:space-between;">
             <a href="{{ route('dashboard') }}"
                style="

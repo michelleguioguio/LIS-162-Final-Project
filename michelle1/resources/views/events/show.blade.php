@@ -45,26 +45,26 @@
                 </tr>
             </thead>
             <tbody>
-@foreach($event->merchandise as $m)
-    <tr style="background:#e8f4d7ff;">
-        <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
-            {{ $m->name }}
-        </td>
+    @foreach($event->merchandise as $m)
+        <tr style="background:#e8f4d7ff;">
+            <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
+                {{ $m->name }}
+            </td>
 
-        <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
-            ₱{{ number_format($m->price, 2) }}
-        </td>
+            <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
+                ₱{{ number_format($m->price, 2) }}
+            </td>
 
-        <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
-            {{ $m->stock }}
-            
-        </td>
+            <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
+                {{ $m->stock }}
+                
+            </td>
 
-        <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
-            {{ $m->merchandiseType?->merchandise_type_name ?? 'No type' }}
-        </td>
-    </tr>
-@endforeach
+            <td style="padding:10px; border-bottom:1px solid #f6a7c6ff;">
+                {{ $m->merchandiseType?->merchandise_type_name ?? 'No type' }}
+            </td>
+        </tr>
+    @endforeach
 
             </tbody>
         </table>
@@ -85,4 +85,4 @@
            ">
             Return to Index
         </a>
-    </div>
+</div>

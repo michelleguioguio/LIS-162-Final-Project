@@ -17,7 +17,7 @@
         @csrf
         @method('PUT')
 
-        <!-- Event Name -->
+        
         <div style="margin-bottom:20px;">
             <label for="event_name" style="display:block; font-weight:bold; margin-bottom:5px;">Event Name</label>
             <input type="text" name="event_name" id="event_name" 
@@ -25,7 +25,7 @@
                 style="width:100%; padding:10px; border:1px solid #f6a7c6ff; border-radius:5px;">
         </div>
 
-        <!-- Event Date -->
+        
         <div style="margin-bottom:20px;">
             <label for="event_date" style="display:block; font-weight:bold; margin-bottom:5px;">Date</label>
             <input type="date" name="event_date" id="event_date" 
@@ -33,7 +33,7 @@
                 style="width:100%; padding:10px; border:1px solid #f6a7c6ff; border-radius:5px;">
         </div>
 
-        <!-- Merchandise Assignment -->
+        
         <h4 style="color:#a4d88cff; margin-bottom:10px;">Assign Merchandise</h4>
         <div style="margin-bottom:20px;">
             @foreach($merchandise as $m)
@@ -48,7 +48,7 @@
             @endforeach
         </div>
 
-        <!-- Submit Button -->
+        
         <div style="text-align:center;">
             <button type="submit" style="
                 background:#a4d88cff; 

@@ -18,57 +18,57 @@
             >
 
             <br></br>
-                <div class="p-8 text-center";>
+            <div class="p-8 text-center";>
 
-                    <h3
+                <h3
                         class="text-xl font-semibold mb-4"
                         style="color:#a4d88cff;"
-                    >
-                       Do your stuff!
-                    </h3>
+                >
+                    Do your stuff!
+                </h3>
 
                     
 
-                    <div class="flex flex-wrap justify-center" style="column-gap: 10rem; row-gap: 3rem;">
-            <!-- Item 1 -->
-            <a href="{{ route('merchandise.create') }}" class="flex flex-col items-center gap-2">
-                <img
-                src="{{ asset('assets/css/images/create2.png') }}"
-                alt="Register Merchandise"
-                style="height:auto; width:150px;"
-                >
-                <span class="font-bold text-#a4d88cff text-center">Register Merchandise</span>
-            </a>
+            <div class="flex flex-wrap justify-center" style="column-gap: 10rem; row-gap: 3rem;">
+            
+                <a href="{{ route('merchandise.create') }}" class="flex flex-col items-center gap-2">
+                    <img
+                    src="{{ asset('assets/css/images/create2.png') }}"
+                    alt="Register Merchandise"
+                    style="height:auto; width:150px;"
+                    >
+                    <span class="font-bold text-#a4d88cff text-center">Register Merchandise</span>
+                </a>
 
-            <!-- Item 2 -->
-            <a href="{{ url('http://127.0.0.1:8000/merchandise') }}" class="flex flex-col items-center gap-2">
-                <img
-                src="{{ asset('assets/css/images/merchicon.png') }}"
-                alt="View Merchandise"
-                style="height:auto; width:150px;"
-                >
-                <span class="font-bold text-[#a4d88cff] text-center">View Merchandise</span>
-            </a>
+                
+                <a href="{{ url('http://127.0.0.1:8000/merchandise') }}" class="flex flex-col items-center gap-2">
+                    <img
+                    src="{{ asset('assets/css/images/merchicon.png') }}"
+                    alt="View Merchandise"
+                    style="height:auto; width:150px;"
+                    >
+                    <span class="font-bold text-[#a4d88cff] text-center">View Merchandise</span>
+                </a>
 
-            <!-- Item 3 -->
-            <a href="{{ url('http://127.0.0.1:8000/events') }}" class="flex flex-col items-center gap-2">
-                <img
-                src="{{ asset('assets/css/images/eventsicon.png') }}"
-                alt="View Events"
-                style="height:auto; width:150px;"
-                >
-                <span class="font-bold text-#a4d88cff text-center">View Events</span>
-            </a>
+                
+                <a href="{{ url('http://127.0.0.1:8000/events') }}" class="flex flex-col items-center gap-2">
+                    <img
+                    src="{{ asset('assets/css/images/eventsicon.png') }}"
+                    alt="View Events"
+                    style="height:auto; width:150px;"
+                    >
+                    <span class="font-bold text-#a4d88cff text-center">View Events</span>
+                </a>
             </div>
             <br></br>
-            <h3
-                        class="text-xl font-semibold mb-4"
-                        style="color:#a4d88cff;"
+                <h3
+                    class="text-xl font-semibold mb-4"
+                    style="color:#a4d88cff;"
                     >
-                        Your merchandise
-                    </h3>
+                    Your merchandise
+                </h3>
             <a>
-            <!-- Merchandise Table -->
+            
             <div class="mt-10 overflow-hidden rounded-xl border"
                  style="border-color:#f6a7c6ff; background-color:#fff;">
                  

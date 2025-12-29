@@ -27,48 +27,47 @@
                 </tr>
             </thead>
 
-  <tbody>
-    @foreach($merchandise as $m)
-      <tr style="border-bottom:1px solid #dcfbbdff; background-color: {{ $loop->even ? '#e8f4d7ff' : '#fff' }};">
-    <td class="px-4 py-2">{{ $m->name }}</td>
-    <td class="px-4 py-2">{{ $m->price }}</td>
-    <td class="px-4 py-2">{{ $m->stock }}</td>
-    <td class="px-4 py-2">{{ $m->merchandiseType?->merchandise_type_name ?? 'No type' }}</td>
-    <td class="px-4 py-2">
-    {{ $m->user?->name ?? 'Unknown Artist' }}</td>
+        <tbody>
+          @foreach($merchandise as $m)
+            <tr style="border-bottom:1px solid #dcfbbdff; background-color: {{ $loop->even ? '#e8f4d7ff' : '#fff' }};">
+              <td class="px-4 py-2">{{ $m->name }}</td>
+              <td class="px-4 py-2">{{ $m->price }}</td>
+              <td class="px-4 py-2">{{ $m->stock }}</td>
+              <td class="px-4 py-2">{{ $m->merchandiseType?->merchandise_type_name ?? 'No type' }}</td>
+              <td class="px-4 py-2">{{ $m->user?->name ?? 'Unknown Artist' }}</td>
 
 
-      <td>
-            <a href="{{ route('merchandise.show', ['merchandise' => $m->id]) }}"
-              class="button small"
-              style="
-                    background:#d0d5cbff;
-                    color:white;
-                    padding:6px 12px;
-                    border-radius:6px;
-                    text-decoration:none;
-                    display:inline-block;
-                    margin:6px 0;
-              ">
-                Show
-            </a>
-           
-      </td>
+                <td>
+                      <a href="{{ route('merchandise.show', ['merchandise' => $m->id]) }}"
+                        class="button small"
+                        style="
+                              background:#d0d5cbff;
+                              color:white;
+                              padding:6px 12px;
+                              border-radius:6px;
+                              text-decoration:none;
+                              display:inline-block;
+                              margin:6px 0;
+                        ">
+                          Show
+                      </a>
+                    
+                </td>
 
-      
-        </tr>
-     @endforeach
-  </tbody>
-</table>
+            
+            </tr>
+          @endforeach
+        </tbody>
+      </table>
 </div>
 
-<div style=" margin-top:40px; margin-bottom:20px; text-align:center;">
-        <a href="{{ route('dashboard') }}" class="button icon solid fa-plus" style="background:#f7c0d7; color:white; padding:8px 16px; border-radius:5px; text-decoration:none; margin-right:20px;">
-Back to Dashboard
-</a>
-<a href="{{ url('http://127.0.0.1:8000/') }}" class="button icon solid fa-plus" style="background:#98b599; color:white; padding:8px 16px; border-radius:5px; text-decoration:none; margin-right:20px;">
-Back to Home
-</a>
-        
+    <div style=" margin-top:40px; margin-bottom:20px; text-align:center;">
+            <a href="{{ route('dashboard') }}" class="button icon solid fa-plus" style="background:#f7c0d7; color:white; padding:8px 16px; border-radius:5px; text-decoration:none; margin-right:20px;">
+            Back to Dashboard
+            </a>
+            <a href="{{ url('http://127.0.0.1:8000/') }}" class="button icon solid fa-plus" style="background:#98b599; color:white; padding:8px 16px; border-radius:5px; text-decoration:none; margin-right:20px;">
+          Back to Home
+          </a>
+            
     </div>
 </div>
